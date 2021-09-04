@@ -34,8 +34,63 @@ function Game() {
                                 <Valuebox value="23123" title="Total Players"/>
                             </div>
                         </div>
+
+                        <div className="overall-percentage-container">
+                            <div className="percentage-container-up">
+                                <Percentage percentage="1% to 2%" />
+                            </div>
+                            <div className="percentage-container-down">
+                                <Valuebox value="23123" title="Your Value"/>
+                                <Valuebox value="23123" title="Total Value"/>
+                                <Valuebox value="23123" title="Total Players"/>
+                            </div>
+                        </div>
+
+                        <div className="overall-percentage-container">
+                            <div className="percentage-container-up">
+                                <Percentage percentage="2% and above" />
+                            </div>
+                            <div className="percentage-container-down">
+                                <Valuebox value="23123" title="Your Value"/>
+                                <Valuebox value="23123" title="Total Value"/>
+                                <Valuebox value="23123" title="Total Players"/>
+                            </div>
+                        </div>
                     </div>
-                    <div className="game-right"></div>
+                    <div className="game-right">
+                        <div className="overall-percentage-container">
+                            <div className="percentage-container-up">
+                                <Percentage percentage="Less than 1%" />
+                            </div>
+                            <div className="percentage-container-down">
+                                <Valuebox value="23123" title="Your Value"/>
+                                <Valuebox value="23123" title="Total Value"/>
+                                <Valuebox value="23123" title="Total Players"/>
+                            </div>
+                        </div>
+
+                        <div className="overall-percentage-container">
+                            <div className="percentage-container-up">
+                                <Percentage percentage="1% to 2%" />
+                            </div>
+                            <div className="percentage-container-down">
+                                <Valuebox value="23123" title="Your Value"/>
+                                <Valuebox value="23123" title="Total Value"/>
+                                <Valuebox value="23123" title="Total Players"/>
+                            </div>
+                        </div>
+
+                        <div className="overall-percentage-container">
+                            <div className="percentage-container-up">
+                                <Percentage percentage="2% and above" />
+                            </div>
+                            <div className="percentage-container-down">
+                                <Valuebox value="23123" title="Your Value"/>
+                                <Valuebox value="23123" title="Total Value"/>
+                                <Valuebox value="23123" title="Total Players"/>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <BtcScore score="23435342534"/>
                 <Valuebox value="23123" title="Your Value"/>
