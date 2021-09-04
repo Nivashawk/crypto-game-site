@@ -1,0 +1,18 @@
+.percentage {
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
+  background: #301231;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    inset 4px 4px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 10px 0 10px;
+}
