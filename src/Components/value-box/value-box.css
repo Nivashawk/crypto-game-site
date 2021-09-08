@@ -1,5 +1,4 @@
-.value-box-wrap
-{
+.value-box-wrap {
     width: fit-content;
     height: fit-content;
     display: flex;
@@ -9,35 +8,43 @@
     margin: 0 10px 0 10px;
 }
 
-.value-box 
-{
-  height: 4vh;
-  width: fit-content;
-  padding: 0 10px 0 10px;
-  background: #301231;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
-    inset 4px 4px 25px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.05em;
-  color: #ffffff;
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: #d816b9;
-  margin-bottom: 1px;
-  font-size: 12px;
+.value-box {
+    height: 4vh;
+    width: fit-content;
+    padding: 0 10px 0 10px;
+    background: #301231;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 4px 4px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #d816b9;
+    margin-bottom: 1px;
+    font-size: 12px;
 }
 
-.value-box-title 
-{
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #ffffff;
+.value-box-title {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+@media only screen and (max-device-width: 768px) {
+    .value-box {
+        height: fit-content;
+        font-size: 4px;
+        padding: 0 4px 0 4px;
+    }
+    .value-box-title {
+        font-size: 3px;
+    }
 }

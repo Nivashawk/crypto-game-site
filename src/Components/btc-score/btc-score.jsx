@@ -5,7 +5,7 @@ function BtcScore(props) {
     // design started here
     return (
         <div className="btc-box">
-            <img src="/images/game/btc.svg" alt="" />
+            <img className="btc-img" src="/images/game/btc.svg" alt="" />
             BTC {props.score}
         </div>
     );

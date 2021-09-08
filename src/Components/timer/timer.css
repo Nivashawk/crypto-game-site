@@ -1,0 +1,25 @@
+.timer-box {
+    height: fit-content;
+    width: fit-content;
+    background: #882C8A;
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: Suez One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-device-width: 768px) {
+    .timer-box {
+        font-size: 8px;
+        padding: 5px;
+    }
+}

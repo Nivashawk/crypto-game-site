@@ -1,21 +1,31 @@
 .btc-box {
-  height: fit-content;
-  width: fit-content;
-  padding: 10px;
-  background: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
-    inset 4px 4px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 34px;
-  line-height: 28px;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 28px;
 }
 
-img {
-  height: 4vh;
-  margin-right: 10px;
+.btc-img {
+    height: 4vh;
+    margin-right: 10px;
+}
+
+@media only screen and (max-device-width: 768px) {
+    .btc-box {
+        font-size: 10px;
+        padding: 4px;
+    }
+    .btc-img {
+        height: 2vh;
+        margin-right: 10px;
+    }
 }
