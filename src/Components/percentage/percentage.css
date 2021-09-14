@@ -16,10 +16,15 @@
     margin: 0 10px 0 10px;
 }
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-device-width: 976px) {
     .percentage {
         font-size: 6px;
         margin: 0 3px 0 3px;
         padding: 5px;
+        height: 10px;
+        display: flex;
+        align-items: center;
+        border-radius: 0px;
+        margin: 0 3px 0 0px;
     }
 }

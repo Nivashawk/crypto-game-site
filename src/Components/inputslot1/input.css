@@ -44,9 +44,10 @@ form {
     height: 6vh;
 }
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-device-width: 976px) {
+    form{margin: 0px;}
     .form__field {
-        height: fit-content;
+        height: 10px;
         font-size: 4px;
     }
      ::placeholder {

@@ -2,13 +2,13 @@ import './input.css';
 import { useForm } from 'react-hook-form';
 
 
-function Negative2andabove({setselectedNeg_2andabove}) {
+function Input({setselectedinput}) {
 
     // Form data accessed here
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data.value);
-        setselectedNeg_2andabove(data.value)
+        setselectedinput(data.value)
     }
 
     // design started here
@@ -20,4 +20,4 @@ function Negative2andabove({setselectedNeg_2andabove}) {
     );
 }
 
-export default Negative2andabove;
+export default Input;

@@ -1,25 +1,44 @@
+
 .timer-box {
-    height: fit-content;
-    width: fit-content;
-    background: #882C8A;
-    border: 3px solid #FFFFFF;
-    box-sizing: border-box;
-    border-radius: 10px;
-    padding: 10px;
-    font-family: Suez One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
+  height: fit-content;
+  width: fit-content;
+  background: #882c8a;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: Suez One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
 }
 
-@media only screen and (max-device-width: 768px) {
-    .timer-box {
-        font-size: 8px;
-        padding: 5px;
-    }
+.slot_title {
+  font-family: poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media only screen and (max-device-width: 976px) {
+  .timer-box {
+    font-size: 8px;
+    padding: 5px;
+    height: 10px;
+    border-radius: 0px;
+    line-height: 0;
+    border: 2px solid #ffffff;
+  }
+
+  .slot_title {
+    font-size: 10px;
+  }
 }

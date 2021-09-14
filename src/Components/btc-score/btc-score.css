@@ -12,6 +12,8 @@
     font-weight: bold;
     font-size: 34px;
     line-height: 28px;
+    position: absolute;
+    top: 2.8vh;
 }
 
 .btc-img {
@@ -19,7 +21,7 @@
     margin-right: 10px;
 }
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-device-width: 976px) {
     .btc-box {
         font-size: 10px;
         padding: 4px;

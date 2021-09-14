@@ -1,64 +1,63 @@
-import './timer.css';
+import "./timer.css";
+import { useState, useEffect, useRef } from "react";
 
+function Slot1() {
+  const [slotTime, setslotTime] = useState("00:00 to 00:00");
 
-function Slot1(props) {
-    var slot_value = "23423";
-    const current_time = new Date().toLocaleTimeString('en-GB', { hour: "numeric", minute: "numeric"});
-    console.log(current_time);
-    console.log(new Date("Jan 5, 2022 15:37:25").getTime());
+  let interval = useRef();
 
-    // should refactor it 
-    if(current_time >= "00:00" && current_time <= "02:00" )
-    {
-        slot_value = "00:00 to 01:00"
-    }
-    else if(current_time >= "02:00" && current_time <= "04:00" )
-    {
-        slot_value = "02:00 to 03:00"
-    }
-    else if(current_time >= "04:00" && current_time <= "06:00" )
-    {
-        slot_value = "04:00 to 05:00"
-    }
-    else if(current_time >= "06:00" && current_time <= "08:00" )
-    {
-        slot_value = "06:00 to 07:00"
-    }
-    else if(current_time >= "10:00" && current_time <= "12:00" )
-    {
-        slot_value = "10:00 to 11:00"
-    }
-    else if(current_time >= "12:00" && current_time <= "14:00" )
-    {
-        slot_value = "12:00 to 13:00"
-    }
-    else if(current_time >= "14:00" && current_time <= "16:00" )
-    {
-        slot_value = "14:00 to 15:00"
-    }
-    else if(current_time >= "16:00" && current_time <= "18:00" )
-    {
-        slot_value = "16:00 to 17:00"
-    }
-    else if(current_time >= "18:00" && current_time <= "20:00" )
-    {
-        slot_value = "18:00 to 19:00"
-    }
-    else if(current_time >= "20:00" && current_time <= "22:00" )
-    {
-        slot_value = "20:00 to 21:00"
-    }
-    else if(current_time >= "22:00" && current_time <= "24:00" )
-    {
-        slot_value = "22:00 to 23:00"
-    }
+  // getTimeString = () => {
+  //     const date = new Date(Date.now()).toLocaleTimeString();
+  //     return date;
+  //   }
 
-    // design started here
-    return (
-        <div className="timer-box">
-            {slot_value}
-        </div>
-    );
+  const startTimer = () => {
+    interval = setInterval(() => {
+      var date = new Date(Date.now()).toLocaleTimeString();
+      console.log(date);
+      if (date >= "00:00:00" && date <= "02:00:00") {
+        setslotTime("00:00 To 01:00");
+      } else if (date >= "02:00:00" && date <= "04:00:00") {
+        setslotTime("02:00 To 03:00");
+      } else if (date >= "04:00:00" && date <= "06:00:00") {
+        setslotTime("04:00 To 05:00");
+      } else if (date >= "06:00:00" && date <= "08:00:00") {
+        setslotTime("06:00 To 07:00");
+      } else if (date >= "08:00:00" && date <= "10:00:00") {
+        setslotTime("08:00 To 09:00");
+      } else if (date >= "10:00:00" && date <= "12:00:00") {
+        setslotTime("10:00 To 11:00");
+      } else if (date >= "12:00:00" && date <= "14:00:00") {
+        setslotTime("12:00 To 13:00");
+      } else if (date >= "14:00:00" && date <= "16:00:00") {
+        setslotTime("14:00 To 15:00");
+      } else if (date >= "16:00:00" && date <= "18:00:00") {
+        setslotTime("16:00 To 17:00");
+      } else if (date >= "18:00:00" && date <= "20:00:00") {
+        setslotTime("18:00 To 19:00");
+      } else if (date >= "20:00:00" && date <= "22:00:00") {
+        setslotTime("20:00 To 21:00");
+      } else if (date >= "22:00:00" && date <= "24:00:00") {
+        setslotTime("22:00 To 23:00");
+      }
+    }, 10000);
+  };
+
+  useEffect(() => {
+    startTimer();
+    return () => {
+      clearInterval(interval.cutrrent);
+    };
+  });
+
+  // design started here
+
+  return (
+    <div className="wrap">
+      <div className="timer-box">{slotTime}</div>
+      <div className="slot_title">Time Slot</div>;
+    </div>
+  );
 }
 
 export default Slot1;

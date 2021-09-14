@@ -39,12 +39,19 @@
 }
 
 @media only screen and (max-device-width: 768px) {
+    .value-box-wrap
+    {
+        margin: 0px;
+    }
     .value-box {
         height: fit-content;
-        font-size: 4px;
-        padding: 0 4px 0 4px;
+        font-size: 6px;
+        padding: 4px;
+        border-radius: 0px;
+        margin: 2px;
     }
     .value-box-title {
-        font-size: 3px;
+        font-size: 5px;
+        line-height: 0px;
     }
 }

@@ -25,11 +25,18 @@
 }
 
 @media only screen and (max-device-width: 768px) {
+    .Wallet-box-wrap
+    {
+        padding: 5px;
+        margin-left: 5px;
+        border-radius: 0px;
+    }
     .wallet-title {
         font-size: 6px;
+        line-height: 0px;
     }
     .wallet-img {
-        height: 2vh;
-        margin-right: 10px;
+        height: 1vh;
+        margin-right: 5px;
     }
 }
