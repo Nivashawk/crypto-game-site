@@ -1,6 +1,9 @@
 import { Fragment } from "react";
 import "./game.css";
+import { useEffect } from 'react'
 import { useState } from "react";
+import AOS from 'aos';
+import "aos/dist/aos.css";
 import { useLottie } from "lottie-react";
 import particles from "./../../lotties/57356-particle-effect-electric.json";
 
@@ -18,6 +21,11 @@ import Countdown1 from "../../Components/countdown-timer/countdowntimer1";
 import Countdown2 from "../../Components/countdown-timer/countdowntimer2";
 
 function Game() {
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+})
+
   // BG lottie
   const BGLottie = () => {
     const options = {
@@ -36,11 +44,11 @@ function Game() {
 
   return (
     <Fragment>
-      <body>
+      <body data-aos="zoom-out">
         <div className="lottie-arrow">
           <BGLottie />
         </div>
-        <section className="game">
+        <section className="game" >
         <BtcScore score="00000000" />
           <div className="game-header">
             <div className="diamond">
@@ -79,9 +87,9 @@ function Game() {
                 </div>
                 <div className="percentage-container-down">
                   <Input setselectedinput={setselectedinput} />
-                  <Valuebox value="00000" title="Your Value" />
-                  <Valuebox value="00000" title="Total Value" />
-                  <Valuebox value="00000" title="Total Players" />
+                  <Valuebox value={selectedinput} title="Your Value" />
+                  <Valuebox value="000" title="Total Value" />
+                  <Valuebox value="000" title="Total Players" />
                 </div>
               </div>
 
@@ -91,9 +99,9 @@ function Game() {
                 </div>
                 <div className="percentage-container-down">
                   <Input setselectedinput={setselectedinput} />
-                  <Valuebox value="00000" title="Your Value" />
-                  <Valuebox value="00000" title="Total Value" />
-                  <Valuebox value="00000" title="Total Players" />
+                  <Valuebox value="000" title="Your Value" />
+                  <Valuebox value="000" title="Total Value" />
+                  <Valuebox value="000" title="Total Players" />
                 </div>
               </div>
 
@@ -103,9 +111,9 @@ function Game() {
                 </div>
                 <div className="percentage-container-down">
                   <Input setselectedinput={setselectedinput} />
-                  <Valuebox value="00000" title="Your Value" />
-                  <Valuebox value="00000" title="Total Value" />
-                  <Valuebox value="00000" title="Total Players" />
+                  <Valuebox value="000" title="Your Value" />
+                  <Valuebox value="000" title="Total Value" />
+                  <Valuebox value="000" title="Total Players" />
                 </div>
               </div>
 
@@ -115,9 +123,9 @@ function Game() {
                 </div>
                 <div className="percentage-container-down">
                   <Input setselectedinput={setselectedinput} />
-                  <Valuebox value="00000" title="Your Value" />
-                  <Valuebox value="00000" title="Total Value" />
-                  <Valuebox value="00000" title="Total Players" />
+                  <Valuebox value="000" title="Your Value" />
+                  <Valuebox value="000" title="Total Value" />
+                  <Valuebox value="000" title="Total Players" />
                 </div>
               </div>
             </div>
@@ -128,9 +136,9 @@ function Game() {
                 </div>
                 <div className="percentage-container-down">
                   <Input setselectedinput={setselectedinput} />
-                  <Valuebox value="00000" title="Your Value" />
-                  <Valuebox value="00000" title="Total Value" />
-                  <Valuebox value="00000" title="Total Players" />
+                  <Valuebox value="000" title="Your Value" />
+                  <Valuebox value="000" title="Total Value" />
+                  <Valuebox value="000" title="Total Players" />
                 </div>
               </div>
 
@@ -140,9 +148,9 @@ function Game() {
                 </div>
                 <div className="percentage-container-down">
                   <Input setselectedinput={setselectedinput} />
-                  <Valuebox value="00000" title="Your Value" />
-                  <Valuebox value="00000" title="Total Value" />
-                  <Valuebox value="00000" title="Total Players" />
+                  <Valuebox value="000" title="Your Value" />
+                  <Valuebox value="000" title="Total Value" />
+                  <Valuebox value="000" title="Total Players" />
                 </div>
               </div>
 
@@ -152,9 +160,9 @@ function Game() {
                 </div>
                 <div className="percentage-container-down">
                   <Input setselectedinput={setselectedinput} />
-                  <Valuebox value="00000" title="Your Value" />
-                  <Valuebox value="00000" title="Total Value" />
-                  <Valuebox value="00000" title="Total Players" />
+                  <Valuebox value="000" title="Your Value" />
+                  <Valuebox value="000" title="Total Value" />
+                  <Valuebox value="000" title="Total Players" />
                 </div>
               </div>
 
@@ -198,9 +206,9 @@ function Game() {
                 </div>
                 <div className="percentage-container-down">
                   <Input setselectedinput={setselectedinput} />
-                  <Valuebox value="00000" title="Your Value" />
-                  <Valuebox value="00000" title="Total Value" />
-                  <Valuebox value="00000" title="Total Players" />
+                  <Valuebox value="000" title="Your Value" />
+                  <Valuebox value="000" title="Total Value" />
+                  <Valuebox value="000" title="Total Players" />
                 </div>
               </div>
 
@@ -210,9 +218,9 @@ function Game() {
                 </div>
                 <div className="percentage-container-down">
                   <Input setselectedinput={setselectedinput} />
-                  <Valuebox value="00000" title="Your Value" />
-                  <Valuebox value="00000" title="Total Value" />
-                  <Valuebox value="00000" title="Total Players" />
+                  <Valuebox value="000" title="Your Value" />
+                  <Valuebox value="000" title="Total Value" />
+                  <Valuebox value="000" title="Total Players" />
                 </div>
               </div>
 
@@ -222,9 +230,9 @@ function Game() {
                 </div>
                 <div className="percentage-container-down">
                   <Input setselectedinput={setselectedinput} />
-                  <Valuebox value="00000" title="Your Value" />
-                  <Valuebox value="00000" title="Total Value" />
-                  <Valuebox value="00000" title="Total Players" />
+                  <Valuebox value="000" title="Your Value" />
+                  <Valuebox value="000" title="Total Value" />
+                  <Valuebox value="000" title="Total Players" />
                 </div>
               </div>
 
@@ -234,9 +242,9 @@ function Game() {
                 </div>
                 <div className="percentage-container-down">
                   <Input setselectedinput={setselectedinput} />
-                  <Valuebox value="00000" title="Your Value" />
-                  <Valuebox value="00000" title="Total Value" />
-                  <Valuebox value="00000" title="Total Players" />
+                  <Valuebox value="000" title="Your Value" />
+                  <Valuebox value="000" title="Total Value" />
+                  <Valuebox value="000" title="Total Players" />
                 </div>
               </div>
             </div>
@@ -247,9 +255,9 @@ function Game() {
                 </div>
                 <div className="percentage-container-down">
                   <Input setselectedinput={setselectedinput} />
-                  <Valuebox value="00000" title="Your Value" />
-                  <Valuebox value="00000" title="Total Value" />
-                  <Valuebox value="00000" title="Total Players" />
+                  <Valuebox value="000" title="Your Value" />
+                  <Valuebox value="000" title="Total Value" />
+                  <Valuebox value="000" title="Total Players" />
                 </div>
               </div>
 
@@ -259,9 +267,9 @@ function Game() {
                 </div>
                 <div className="percentage-container-down">
                   <Input setselectedinput={setselectedinput} />
-                  <Valuebox value="00000" title="Your Value" />
-                  <Valuebox value="00000" title="Total Value" />
-                  <Valuebox value="00000" title="Total Players" />
+                  <Valuebox value="000" title="Your Value" />
+                  <Valuebox value="000" title="Total Value" />
+                  <Valuebox value="000" title="Total Players" />
                 </div>
               </div>
 
@@ -271,15 +279,15 @@ function Game() {
                 </div>
                 <div className="percentage-container-down">
                   <Input setselectedinput={setselectedinput} />
-                  <Valuebox value="00000" title="Your Value" />
-                  <Valuebox value="00000" title="Total Value" />
-                  <Valuebox value="00000" title="Total Players" />
+                  <Valuebox value="000" title="Your Value" />
+                  <Valuebox value="000" title="Total Value" />
+                  <Valuebox value="000" title="Total Players" />
                 </div>
               </div>
 
               <div className="overall-percentage-container">
                 <div className="percentage-container-down">
-                  <div className="total-amount">65765765675765</div>
+                  <div className="total-amount">0000</div>
                   <Wallet title="claim" />
                 </div>
               </div>

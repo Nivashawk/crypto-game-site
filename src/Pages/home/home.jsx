@@ -2,7 +2,7 @@ import './home.css';
 import { useHistory } from 'react-router-dom';
 import { useEffect } from 'react'
 import { useLottie } from "lottie-react";
-import particles from "./../../lotties/57356-particle-effect-electric.json";
+// import particles from "./../../lotties/57356-particle-effect-electric.json";
 import homeimg from "./../../lotties/60257-business-analytics.json";
 import AOS from 'aos';
 import "aos/dist/aos.css";
@@ -24,16 +24,16 @@ function Home() {
         return View;
       };
 
-      const BG = () => {
-        const options = {
-          animationData: particles,
-          loop: true,
-          autoplay: true,
-          innerHeight:100
-        };
-        const { View } = useLottie(options);
-        return View;
-      };
+      // const BG = () => {
+      //   const options = {
+      //     animationData: particles,
+      //     loop: true,
+      //     autoplay: true,
+      //     innerHeight:100
+      //   };
+      //   const { View } = useLottie(options);
+      //   return View;
+      // };
 
     // Routing done here
 

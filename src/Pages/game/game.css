@@ -191,7 +191,15 @@ body {
 
 @media only screen and (max-device-width: 768px) {
   .game {
+    background: rgb(63, 30, 71);
+    /* background: radial-gradient(
+    circle,
+    rgba(63, 30, 71, 0.9864320728291317) 0%,
+    rgba(2, 0, 36, 1) 100%,
+    rgba(54, 11, 64, 0.9500175070028011) 100%
+  ); */
     height: fit-content;
+    padding: 10px;
   }
   .game-header2 {
     margin-top: 0px;
@@ -246,4 +254,12 @@ body {
   body {
     height: 100%;
   }
+
+  /* version 2 */
+  /* .game {
+    background: rgb(255, 255, 255);
+    
+  } */
+
+
 }

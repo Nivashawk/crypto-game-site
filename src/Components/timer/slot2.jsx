@@ -54,7 +54,7 @@ function Slot2() {
  
     return <div className="wrap">
                 <div className="timer-box">{slotTime}</div>
-                <div className="slot_title">Time Slot</div>;
+                <div className="slot_title">Time Slot</div>
             </div>
   }
 

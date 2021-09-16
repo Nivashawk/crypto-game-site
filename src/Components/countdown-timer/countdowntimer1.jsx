@@ -36,14 +36,14 @@ function Countdown1() {
 const second30minutes = () => {
     const CountdownTime30 = 60 * 60000;
     const Countsec = 60 * 1000;
-    const nowmin = (new Date().getMinutes() - 1) * 60000;
-    const nowsec = new Date().getSeconds() * 1000;
-    var distanceofminute = CountdownTime30 - nowmin;
-    var distanceofseconds = Countsec - nowsec;
-    const second30minutes = Math.floor(
-      ((distanceofminute % (1000 * 60 * 60)) / (1000 * 60)) -1
-      );
-    const seconds = Math.floor((distanceofseconds % (1000 * 60)) / 1000);
+    // const nowmin = (new Date().getMinutes() - 1) * 60000;
+    // const nowsec = new Date().getSeconds() * 1000;
+    // var distanceofminute = CountdownTime30 - nowmin;
+    // var distanceofseconds = Countsec - nowsec;
+    // const second30minutes = Math.floor(
+    //   ((distanceofminute % (1000 * 60 * 60)) / (1000 * 60)) -1
+    //   );
+    // const seconds = Math.floor((distanceofseconds % (1000 * 60)) / 1000);
 
 
 
@@ -60,7 +60,7 @@ const second30minutes = () => {
       const seconds = Math.floor((distanceofseconds % (1000 * 60)) / 1000);
 
       if (distanceofminute < 0) {
-        clearInterval(interval.current);
+        clearInterval(interval);
       } else {
         setTimerMinutes(second30minutes);
         setTimerSeconds(seconds);
@@ -203,7 +203,7 @@ const second30minutes = () => {
   useEffect(() => {
     timer();
     return () => {
-      clearInterval(interval.current);
+      clearInterval(interval);
     };
   });
 

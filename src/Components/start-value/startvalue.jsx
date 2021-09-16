@@ -1,11 +1,14 @@
 import './startvalue.css';
+import classNames from 'classnames'
+
 
 
 function Startvalue(props) {
+    const btnClass = classNames("startvaluewarp" , "glowing")
     // design started here
     return (
-        <div className="startvaluewarp">
-            <div className="startvaluetitle">
+        <div className={btnClass}>
+            <div className="startvaluetitle ">
                 Start Value
             </div>
             <div className="start-btc-box">

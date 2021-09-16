@@ -1,59 +1,100 @@
 form {
-    display: flex;
-    align-items: center;
-    width: fit-content;
-    margin: 10px 10px 10px 0;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin: 10px 10px 10px 0;
 }
 
 .form__field {
-    height: 6vh;
-    margin-right: 10px;
-    border: none;
-    background: #301231;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 4px 4px 25px rgba(0, 0, 0, 0.25);
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height */
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: #888888;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 6vh;
+  margin-right: 10px;
+  border: none;
+  background: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    inset 4px 4px 25px rgba(0, 0, 0, 0.25);
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 ::placeholder {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    /* identical to box height */
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: #888888;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #888888;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .arrow-img {
-    height: 6vh;
+  height: 6vh;
 }
 
 @media only screen and (max-device-width: 976px) {
-    form{margin: 0px;}
-    .form__field {
-        height: 10px;
-        font-size: 4px;
+  form {
+    margin: 0px;
+    
+  }
+  .form__field {
+    height: 10px;
+    font-size: 4px;
+    margin-right: 2px;
+    
+  }
+
+  .glowing::before{
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, #e8f74d, #ff6600d9, #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, #ff3300de, #5aabde);
+    background-size: 400%;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -1;
+    animation: glower 20s linear infinite;
+  }
+  
+  @keyframes glower {
+    0% {
+      background-position: 0 0;
     }
-     ::placeholder {
-        font-size: 4px;
+    
+    50% {
+      background-position: 400% 0;
     }
-    .arrow-img {
-        height: 1.5vh;
+    
+    100% {
+      background-position: 0 0;
     }
+  }
+
+  ::placeholder {
+    font-size: 4px;
+  }
+  .arrow-img {
+    height: 1.5vh;
+  }
+
+  /* version 2 */
+
+  /* .form__field {
+    border-radius: 22px;
+    background: black
+  } */
 }
