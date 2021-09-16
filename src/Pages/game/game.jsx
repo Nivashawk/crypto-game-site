@@ -39,6 +39,7 @@ function Game() {
 
   // data sharing values
   const [selectedinput, setselectedinput] = useState("00000");
+  console.log(selectedinput);
 
   // design started here
 
@@ -87,7 +88,7 @@ function Game() {
                 </div>
                 <div className="percentage-container-down">
                   <Input setselectedinput={setselectedinput} />
-                  <Valuebox value={selectedinput} title="Your Value" />
+                  <Valuebox value="000" title="Your Value" />
                   <Valuebox value="000" title="Total Value" />
                   <Valuebox value="000" title="Total Players" />
                 </div>
