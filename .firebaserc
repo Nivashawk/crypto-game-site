@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "crypto-game-ef019"
-  }
+    "default": "crypto-game-ef019",
+    "testing": "nb-crypto-gaming"
+  },
+  "targets": {}
 }

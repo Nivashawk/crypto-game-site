@@ -15,7 +15,6 @@ function Input({setselectedinput}) {
     formclass = formclass.join(' ')
     // design started here
     return (
-        
         <form onSubmit={handleSubmit(onSubmit)}>
             <input id="name" type="text" className={formclass} placeholder="Enter Amount" {...register("value")} />
             <input className="arrow-img" src="/images/game/left-arrow.svg" type="image" alt="submit" />

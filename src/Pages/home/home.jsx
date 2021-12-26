@@ -38,7 +38,7 @@ function Home() {
     // Routing done here
 
     const history = useHistory();
-    const route_to_game = () => history.push('/game');
+    const route_to_game = () => history.push('/instruction');
 
     // design started here
     return (

@@ -14,7 +14,7 @@ function Slot2() {
     const startTimer = () => {
         interval = setInterval(() => {
         var date = new Date(Date.now()).toLocaleTimeString();
-        console.log(date);
+        // console.log(date);
           if (date >= "00:00:00" && date <= "02:00:00") {
             setslotTime("01:00 To 02:00")
           } else if (date >= "02:00:00" && date <= "04:00:00") {
@@ -53,7 +53,7 @@ function Slot2() {
   // design started here
  
     return <div className="wrap">
-                <div className="timer-box">{slotTime}</div>
+                <div id="slot_2" className="timer-box">{slotTime}</div>
                 <div className="slot_title">Time Slot</div>
             </div>
   }

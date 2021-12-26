@@ -1,4 +1,4 @@
-body {
+body{
   position: absolute;
   background: rgb(63, 30, 71);
   background: radial-gradient(
@@ -187,6 +187,28 @@ body {
     font-size: 18px;
     line-height: 24px;
     color: #fdad00;
+    margin-left: 10px;
+}
+
+.walletPosition
+{
+  height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 4px 4px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fdad00;
+    margin-left: 10px;
+  display: flex;
+  gap: 1;
 }
 
 @media only screen and (max-device-width: 768px) {
@@ -255,6 +277,11 @@ body {
     height: 100%;
   }
 
+  .percentage-container-up > img{
+    height: 15px;
+    width: 15px;
+  }
+
   /* version 2 */
   /* .game {
     background: rgb(255, 255, 255);
@@ -262,4 +289,11 @@ body {
   } */
 
 
+}
+
+
+
+.percentage-container-up > img{
+  height: 30px;
+  width: 30px;
 }

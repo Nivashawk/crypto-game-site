@@ -78,120 +78,156 @@ const second30minutes = () => {
       if (date >= "00:00:00" && date <= "00:30:00") {
         setTimerMinutes("00");
         setTimerSeconds("00");
+        document.getElementById("slot_2").style.background = "red"
       } else if (date >= "00:30:00" && date <= "01:00:00") {
         second30minutes()
+        document.getElementById("slot_2").style.background = "red"
       } else if (date >= "01:00:00" && date <= "02:00:00") {
         first60mins()
+        document.getElementById("slot_2").style.background = "green"
       } 
 
       // 02:00 TO 04:00
       if (date >= "02:00:00" && date <= "02:30:00") {
         setTimerMinutes("00");
         setTimerSeconds("00");
+        document.getElementById("slot_2").style.background = "red"
       } else if (date >= "02:30:00" && date <= "03:00:00") {
         second30minutes()
+        document.getElementById("slot_2").style.background = "red"
       } else if (date >= "03:00:00" && date <= "04:00:00") {
         first60mins()
+        document.getElementById("slot_2").style.background = "green"
       } 
 
       // 04:00 TO 06:00
       if (date >= "04:00:00" && date <= "04:30:00") {
         setTimerMinutes("00");
         setTimerSeconds("00");
+        document.getElementById("slot_2").style.background = "red"
       } else if (date >= "04:30:00" && date <= "05:00:00") {
         second30minutes()
+        document.getElementById("slot_2").style.background = "red"
       } else if (date >= "05:00:00" && date <= "06:00:00") {
         first60mins()
+        document.getElementById("slot_2").style.background = "green"
       } 
 
       // 06:00 TO 08:00
       if (date >= "06:00:00" && date <= "06:30:00") {
         setTimerMinutes("00");
         setTimerSeconds("00");
+        document.getElementById("slot_2").style.background = "red"
       } else if (date >= "06:30:00" && date <= "07:00:00") {
         second30minutes()
+        document.getElementById("slot_2").style.background = "red"
       } else if (date >= "07:00:00" && date <= "08:00:00") {
         first60mins()
+        document.getElementById("slot_2").style.background = "green"
       }
 
       // 08:00 TO 10:00
       if (date >= "08:00:00" && date <= "08:30:00") {
         setTimerMinutes("00");
         setTimerSeconds("00");
+        document.getElementById("slot_2").style.background = "red"
       } else if (date >= "08:30:00" && date <= "09:00:00") {
         second30minutes()
+        document.getElementById("slot_2").style.background = "red"
       } else if (date >= "09:00:00" && date <= "10:00:00") {
         first60mins()
+        document.getElementById("slot_2").style.background = "green"
       }
 
       // 10:00 TO 12:00
       if (date >= "10:00:00" && date <= "10:30:00") {
         setTimerMinutes("00");
         setTimerSeconds("00");
+        document.getElementById("slot_2").style.background = "red"
       } else if (date >= "10:30:00" && date <= "11:00:00") {
         second30minutes()
+        document.getElementById("slot_2").style.background = "red"
       } else if (date >= "11:00:00" && date <= "12:00:00") {
         first60mins()
+        document.getElementById("slot_2").style.background = "green"
       }
 
       // 12:00 TO 14:00
       if (date >= "12:00:00" && date <= "12:30:00") {
         setTimerMinutes("00");
         setTimerSeconds("00");
+        document.getElementById("slot_2").style.background = "red"
       } else if (date >= "12:30:00" && date <= "13:00:00") {
         second30minutes()
+        document.getElementById("slot_2").style.background = "red"
       } else if (date >= "13:00:00" && date <= "14:00:00") {
         first60mins()
+        document.getElementById("slot_2").style.background = "green"
       }
 
       // 14:00 TO 16:00
       if (date >= "14:00:00" && date <= "14:30:00") {
         setTimerMinutes("00");
         setTimerSeconds("00");
+        document.getElementById("slot_2").style.background = "red"
       } else if (date >= "14:30:00" && date <= "15:00:00") {
         second30minutes()
+        document.getElementById("slot_2").style.background = "red"
       } else if (date >= "15:00:00" && date <= "16:00:00") {
         first60mins()
+        document.getElementById("slot_2").style.background = "green"
       }
 
       // 16:00 TO 18:00
       if (date >= "16:00:00" && date <= "16:30:00") {
         setTimerMinutes("00");
         setTimerSeconds("00");
+        document.getElementById("slot_2").style.background = "red"
       } else if (date >= "16:30:00" && date <= "17:00:00") {
         second30minutes()
+        document.getElementById("slot_2").style.background = "red"
       } else if (date >= "17:00:00" && date <= "18:00:00") {
         first60mins()
+        document.getElementById("slot_2").style.background = "green"
       }
 
       // 18:00 TO 20:00
       if (date >= "18:00:00" && date <= "18:30:00") {
         setTimerMinutes("00");
         setTimerSeconds("00");
+        document.getElementById("slot_2").style.background = "red"
       } else if (date >= "18:30:00" && date <= "19:00:00") {
         second30minutes()
+        document.getElementById("slot_2").style.background = "red"
       } else if (date >= "19:00:00" && date <= "20:00:00") {
         first60mins()
+        document.getElementById("slot_2").style.background = "green"
       }
 
       // 20:00 TO 22:00
       if (date >= "20:00:00" && date <= "20:30:00") {
         setTimerMinutes("00");
         setTimerSeconds("00");
+        document.getElementById("slot_2").style.background = "red"
       } else if (date >= "20:30:00" && date <= "21:00:00") {
         second30minutes()
+        document.getElementById("slot_2").style.background = "red"
       } else if (date >= "21:00:00" && date <= "22:00:00") {
         first60mins()
+        document.getElementById("slot_2").style.background = "green"
       }
 
       // 22:00 TO 24:00
       if (date >= "22:00:00" && date <= "22:30:00") {
         setTimerMinutes("00");
         setTimerSeconds("00");
+        document.getElementById("slot_2").style.background = "red"
       } else if (date >= "22:30:00" && date <= "23:00:00") {
         second30minutes()
+        document.getElementById("slot_2").style.background = "red"
       } else if (date >= "23:00:00" && date <= "24:00:00") {
         first60mins()
+        document.getElementById("slot_2").style.background = "green"
       }
       
     }, 1000);
